@@ -9,11 +9,10 @@ library(data.table)
 library(knitr)
 
 setwd("/Users/Robert/Desktop/DataScienceTrack/ReproducibleResearch")
-# url <-
-# 'http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip'
+url <- "http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
 
-# download.file(url,paste(getwd(),'/assign1.zip',sep=''),'curl')
-# unzip('assign1.zip')
+download.file(url, paste(getwd(), "/assign1.zip", sep = ""), "curl")
+unzip("assign1.zip")
 data <- data.table(fread("activity.csv"))
 ```
 
